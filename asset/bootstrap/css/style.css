@@ -314,26 +314,34 @@
   
 
 }
-@media (max-width: 390px) {
+@media (max-width: 396px) {
     .cta_btn{
         
         padding: 0.4rem 1.5rem;
         font-weight: 600;
         font-size: 1rem;
-        margin: 0rem  0.2rem;
+        margin: 0rem  0.5rem;
         
     }
     .hero{
         
-        height: 110vh;
+        height: 120vh;
 
         
     }
-    
+    .mainheading{
+        padding: 1rem;
+        margin-top: 1rem;
+        font-size: 1.9rem;
+        word-spacing: 0.3rem;
+    }
+    .textcontain{
+        top: 40%;
+    }
   
 
 }
-@media (max-width: 300px) {
+@media (max-width: 308px) {
     .cta_btn{
         
         padding: 0.4rem 1.5rem;
