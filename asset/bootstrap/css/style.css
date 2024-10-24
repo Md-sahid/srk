@@ -1002,11 +1002,13 @@
     
 }
 
-.social_section .item p{
+.social_section .item p a{
     font-size: 1.5rem;
     background: transparent;
     padding: 0.5rem;
     font-weight: 700;
+    text-decoration: none;
+    color: #01fa04;
 
 }
 .social_section .item p i{
