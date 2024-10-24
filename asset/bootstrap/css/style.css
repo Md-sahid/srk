@@ -6,110 +6,96 @@
     /* overflow: hidden; */
 }
 /* css for navbar starts */
-.navbar {
-    
-    padding: 10px 0;
-    width: 100%;
-    /* margin-top: 15px; */
-    background: black;
-    /* box-shadow: 0 8px 10px 0 rgba(121, 122, 133, 0.37); */
-    /* backdrop-filter: blur( 12.5px );
-    -webkit-backdrop-filter: blur( 12.5px ); */
-    position: fixed;
-    z-index: 15;
-
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.navigation-header {
+    /* background-color: black; */
+    padding: 0 15px;
+    height: 60px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    
+  }
+  
+  nav {
+    width: 100%;
+    /* max-width: 1200px; */
+    display: flex;
     justify-content: space-between;
-    padding: 0 20px;
-    background: black;
-}
-/* .logo{
-    background:transparent;
-    display: flex;
-    flex-direction: row;
-    color: #01fa04;
+    align-items: center;
+    position: fixed;
+    z-index: 13;
+    top: 0;
+    padding:  1rem;
     
-
-
-} */
-.lg{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-/* .logo a img{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: transparent;
     
-} */
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    background: transparent;
-}
-
-.nav-links li {
-    margin-left: 35px;
-    background: transparent;
-}
-
-.nav-links a {
-    color: #fff;
+  }
+  .logo-container > a {
+    color: white;
     text-decoration: none;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
-    font-weight: 600;
-    background: transparent;
-   
-}
-
-.nav-links a:hover{
-    color:#01fa04;
-}
-.nav-links li a.active {
-    color:#01fa04;
-}
-
-/* Mobile Menu */
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.5em;
-    background:transparent;
+    font-weight: 700;
+    font-size: 15px;
     
-}
-/* for responsive  */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
+  }
+  .logo-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  
+    
+  }
+  .logo{
+    height: 40px;
+    width: 40px;
+  }
+  .navigation-items {
+    display: flex;
+    gap: 40px;
+    padding: 0.3rem;
+  }
+  .navigation-items > a {
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .4s ease-in-out;
+    text-transform: uppercase;
+    background: transparent;
+  }
 
-    .nav-links {
-        position: absolute;
-        top: 0%;
-        right: 0%;
-        background-color:black;
-        width: 200px;
-        flex-direction: column;
-        align-items: center;
-        z-index: 10;
-        display: none;
+  .navigation-items > a:hover {
+    color: #01fa04 ;
+  }
+  .hamburger {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+  }
+  @media screen and (max-width:768px) {
+    .hamburger {
+      display: flex;
+      cursor: pointer;
     }
-
-    .nav-links li {
-        margin: 10px 0;
+    .hamburger #closeHam {
+      display: none;
     }
-}
+    .navigation-items {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 58px;
+      background-color:black;
+      width: 100%;
+      height: calc(100vh - 58px);
+      padding-top: 60px;
+      gap: 10vh;
+      z-index: 17;
+    }
+  }
+  
 
 /* navbar ends */
 /* css for hero section strats  */
@@ -210,13 +196,6 @@
     50% { border-color: white }
 }
 
-
-
-
-
-
-
-
 .cta_btn {
     color: white;
     padding: 0.8rem 2.5rem;
@@ -297,23 +276,16 @@
     .imgcontainer{
         height: 40%;
         width: 100%;
-       
-    
+        margin-right: 0;
     }
     
     .w{
         font-size: 4rem;
     }
-    .imgcontainer{
-        
-        margin-right: 0;
-      
-        
-    
-    }
-  
 
-}
+     }
+
+
 @media (max-width: 396px) {
     .cta_btn{
         
@@ -337,6 +309,10 @@
     }
     .textcontain{
         top: 40%;
+    }
+    .imgcontainer{
+        margin-top: 0.5rem;
+    
     }
   
 
@@ -548,10 +524,38 @@
     padding: 0 2rem;
     padding-top: 2rem;
 }
+.margin_right{
+   margin-left:  40%;
+   margin-bottom: 1rem;
+}
 
+.g_btn {
+    color: white;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid #01fa04;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+ 
+}
+.g_btn a{
+     text-decoration: none;
+     color: white;
+     background: transparent;
+
+}
+.g_btn:hover{
+    color: black;
+    background-color: #01fa04;
+    box-shadow: 0 0 15px #01fa04;
+}
 .gallery-item {
     flex-basis: calc(33.33% - 10px);
     margin-bottom: 10px;
+   
    
     
 }
@@ -878,9 +882,6 @@
 
 
 
-
-
-
 /* Footer Styles */
 .footer {
     /* background-color: #2c3e50; */
@@ -993,10 +994,10 @@
     gap: 2rem;
 }
 .social_section .item{
-    height: 50%;
+    height: 55%;
     width: 20%;
-    background: #01fa04;
-    color: white;
+    background:black;
+    color: #01fa04;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1014,7 +1015,7 @@
 }
 .social_section .item p i{
     background: transparent;
-    color: white;
+    color: #01fa04;
 }
 
 /* for responsive  */
@@ -1035,6 +1036,12 @@
     
 }
 
+.social_sec_icon{
+    height: 90px;
+    width: 90px;
+    background: transparent;
+    margin-top: auto;
+}
 
 
 /* meet our team */
@@ -1109,10 +1116,9 @@
     margin-top: 50px;
     font-size: 1.2em;
     color:white;
-    /* background-color: #fff; */
     padding: 20px;
     border-radius: 10px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+   
 }
 .team-message p{
     font-family: cursive;
@@ -1126,19 +1132,6 @@
     }
 }
 
-
-
-
-
-/* @keyframes rotate {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-} */
-
 @keyframes hue-rotate {
     0%{
         filter: hue-rotate(0deg);
@@ -1148,6 +1141,6 @@
     }
 }
 
-.navbar, .text,.obj ,.pride_section, .abt_text, .g_head, .contact-container, .social_section, .signature,.l{
+.navbar, .text,.obj ,.pride_section, .abt_text, .g_head, .contact-container, .social_section , .signature,.l{
     animation: hue-rotate 28s linear infinite;
 } 
