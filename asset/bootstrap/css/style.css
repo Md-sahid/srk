@@ -1141,6 +1141,6 @@
     }
 }
 
-.navbar, .text,.obj ,.pride_section, .abt_text, .g_head, .contact-container, .social_section , .signature,.l{
+.navbar, .text,.obj ,.pride_section, .abt_text, .g_head, .contact-container, .social_section ,.g_btn, .signature,.l{
     animation: hue-rotate 28s linear infinite;
 } 
