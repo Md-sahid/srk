@@ -362,6 +362,7 @@
     background: transparent;
     padding: 0.5rem;
     font-weight: 700;
+    text-transform: uppercase;
 
 }
 /* for responsive  */
@@ -419,6 +420,7 @@
 .abt_section01 .abt_text h1{
     text-transform: uppercase;
     padding: 0.5rem;
+    font-weight: 900;
 }
 .abt_section01 .abt_text p{
     padding: 0.5rem;
@@ -467,6 +469,7 @@
 .abt_section02 .abt_text h1{
     text-transform: uppercase;
     padding: 0.5rem;
+    font-weight: 900;
     
 }
 .abt_section02 .abt_text p{
@@ -506,6 +509,7 @@
     padding: 2rem;
     color: #01fa04;
     text-transform: uppercase;
+    font-weight: 900;
 }
 
 
@@ -606,6 +610,7 @@
 }
 .bio_head{
     font-size: 4rem;
+    font-weight: 900;
 }
 
 .bio_head2{
