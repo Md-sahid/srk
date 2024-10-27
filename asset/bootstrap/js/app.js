@@ -7,15 +7,29 @@
         let openHam = document.querySelector('#openHam');
         let closeHam = document.querySelector('#closeHam');
         let navigationItems = document.querySelector('#navigation-items');
+        let closeItem1=document.querySelector('.cItem1');
+        let closeItem2=document.querySelector('.cItem2');
+        let closeItem3=document.querySelector('.cItem3');
+        let closeItem4=document.querySelector('.cItem4');
+        let closeItem5=document.querySelector('.cItem5');
+        let closeItem6=document.querySelector('.cItem6');
 
         const hamburgerEvent = (navigation, close, open) => {
            navigationItems.style.display = navigation;
-           closeHam.style.display = close;
            openHam.style.display = open;
+           closeHam.style.display = close;
+          
                };
 
          openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
          closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+         closeItem1.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+         closeItem2.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+         closeItem3.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+         closeItem4.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+         closeItem5.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+         closeItem6.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+
 
 
 
