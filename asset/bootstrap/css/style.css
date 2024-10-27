@@ -1014,6 +1014,7 @@
     font-weight: 700;
     text-decoration: none;
     color: #01fa04;
+    text-transform: capitalize;
 
 }
 .social_section .item p i{
