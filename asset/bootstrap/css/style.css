@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     background:#1f2223;
+    scroll-behavior: smooth;
     
 }
 /* css for navbar starts */
@@ -29,7 +30,7 @@
     
   }
   .logo-container > a {
-    color: white;
+    color: #01fa04 ;
     text-decoration: none;
     font-weight: 700;
     font-size: 15px;
@@ -52,6 +53,21 @@
     gap: 40px;
     padding: 0.3rem;
   }
+  .navigation-items1 {
+    display: flex;
+    gap: 40px;
+    padding: 0.3rem;
+    display: none;
+  }
+  .navigation-items1 > a {
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .4s ease-in-out;
+    text-transform: uppercase;
+    background: transparent;
+  }
   .navigation-items > a {
     color:white;
     text-decoration: none;
@@ -63,6 +79,9 @@
   }
 
   .navigation-items > a:hover {
+    color: #01fa04 ;
+  }
+  .navigation-items1 > a:hover {
     color: #01fa04 ;
   }
   .hamburger {
@@ -78,21 +97,29 @@
     }
     .hamburger #closeHam {
       display: none;
+      
     }
     .navigation-items {
       display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      right: 0;
-      top: 58px;
-      background-color:black;
-      width: 100%;
-      height: calc(100vh - 58px);
-      padding-top: 60px;
-      gap: 10vh;
-      z-index: 17;
+      
     }
+    .navigation-items1 {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        background-color:#1f2223;
+        width:100%;
+        height: calc(100vh - 58px);
+        padding-top: 60px;
+        gap: 10vh;
+        z-index: 17;
+        
+        
+        
+      }
   }
   
 
@@ -1145,6 +1172,6 @@
     }
 }
 
-.navbar, .text,.obj ,.pride_section, .abt_text, .g_head, .contact-container, .social_section ,.g_btn, .signature,.l{
+.navbar, .text,.obj ,.pride_section, .abt_text, .g_head, .contact-container, .social_section ,.g_btn, .signature,.l,.logo-container > a{
     animation: hue-rotate 28s linear infinite;
 } 
