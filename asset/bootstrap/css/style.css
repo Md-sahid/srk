@@ -413,12 +413,9 @@
 /* css for about section  */
 .about_section{
     /* background: red; */
-    /* height: 100vh; */
     width:100%;
     overflow-x: hidden;
 }
-
-
 
            /* for section1 */
 .abt_section01{
@@ -523,10 +520,6 @@
     }
 }
 
-
-
-
-
 /* about section ends  */
 .g_head{
     display: flex;
@@ -538,8 +531,6 @@
     text-transform: uppercase;
     font-weight: 900;
 }
-
-
 
 .gallery {
     display: flex;
@@ -581,9 +572,6 @@
 .gallery-item {
     flex-basis: calc(32.33% - 10px);
     margin-bottom: 10px;
-    
-   
-   
     
 }
 
@@ -790,11 +778,6 @@
     }
    
 }
-
-
-
-
-
 
 /* contact */
 
@@ -1006,9 +989,6 @@
         font-size: 12px;
     }
 }
-
-
-
 
 /* social */
 .social_section{
